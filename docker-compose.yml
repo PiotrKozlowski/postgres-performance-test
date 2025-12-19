@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  postgres_test:
+    image: postgres:15
+    container_name: comment_perf_test
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_DB: comment_db
+    ports:
+      - "5432:5432"
+    command: postgres -c shared_buffers=512MB -c work_mem=16MB
