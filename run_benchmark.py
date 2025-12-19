@@ -17,7 +17,7 @@ def run_benchmark():
 
     queries = {
         "Dokładne dopasowanie (=)":
-            f"SELECT count(*) FROM cell_comments WHERE coordinates = '{target_json}'",
+            f"SELECT count(*) FROM cell_comments WHERE coordinates @> '{target_json}' AND coordinates <@ '{target_json}'",
 
         "Dopasowanie nadrzędne (Komentarze 'nad' komórką - operator <@)":
             f"SELECT count(*) FROM cell_comments WHERE coordinates <@ '{target_json}'",
