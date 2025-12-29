@@ -27,12 +27,12 @@ $ python run_benchmark.py
 
 Test: Dokładne dopasowanie (=)
 Wyników: 47
-Czas wykonania: 66.03 ms
+Czas wykonania: 8.08 ms
 
 Test: Dopasowanie nadrzędne (Komentarze 'nad' komórką - operator <@)
 Wyników: 92
-Czas wykonania: 46.33 ms
+Czas wykonania: 47.46 ms
 
 Test: Dopasowanie podrzędne (Komentarze 'pod' komórką - operator @>)
 Wyników: 10025
-Czas wykonania: 11.06 ms
+Czas wykonania: 9.82 ms
