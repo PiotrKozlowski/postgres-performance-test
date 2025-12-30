@@ -13,6 +13,8 @@ cur = conn.cursor()
 
 try:
     cur.execute("TRUNCATE cell_comments")
+    conn.commit()
+    print("Table cell_comments truncated.")
 finally:
     cur.close()
     conn.close()
